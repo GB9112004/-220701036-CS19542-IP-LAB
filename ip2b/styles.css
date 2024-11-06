@@ -1,0 +1,23 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: justify;
+}
+
+h5{
+    color: rgb(80, 105, 150);
+    font-size: larger;
+}
+a{
+    color: rgb(145, 124, 124);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
