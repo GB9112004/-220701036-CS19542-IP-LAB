@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <title>Course Registration</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<center>
+    <h1>Course Registration</h1>
+    <form name="courseRegistration" onsubmit="return validateForm()">
+        <table>
+            <tr>
+                <td><label>Register NO:</label></td>
+                <td><input type="text" name="reg_no" placeholder="enter your reg no"></td>
+            </tr>
+            <tr>
+                <td><label for="Name">Name :</label></td>
+                <td><input type="text" id="Name" name="Name" placeholder="enter your name"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="student_gender">Gender:</label></td>
+                <td>
+                    <select name="student_gender">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="department">Department:</label></td>
+                <td><input type="text" name="department" placeholder="enter your department"></td>
+            </tr>
+            <tr>
+                <td><label for="Section">Section:</label></td>
+                <td><input type="text" name="Section" placeholder="enter your section"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile_no">Mobile No:</label></td>
+                <td><input type="text" name="mobile_no" placeholder="enter your mobile no"></td>
+            </tr>
+            <tr>
+                <td><label for="E-Mail_ID">E-Mail ID:</label></td>
+                <td><input type="text" name="E-Mail_ID" placeholder="enter your email"></td>
+            </tr>
+            <tr>
+                <td><label for="Address">Address:</label></td>
+                <td><input type="text" name="Address" placeholder="enter your address"></td>
+            </tr>
+            <tr>
+                <td><label for="City">City:</label></td>
+                <td><input type="text" name="City" placeholder="enter your city"></td>
+            </tr>
+            <tr>
+                <td><label for="Country">Country:</label></td>
+                <td><input type="text" name="Country" placeholder="enter your country"></td>
+            </tr>
+            <tr>
+                <td><label for="pincode">Pincode:</label></td>
+                <td><input type="text" name="pincode" placeholder="enter your pincode"></td>
+            </tr>
+            <tr>
+                <td><label>Year :</label></td>
+                <td><input type="number" name="year" placeholder="enter the year"></td>
+            </tr>
+            <tr>
+                <td><label>Semester:</label></td>
+                <td><input type="text" name="semester" placeholder="enter current Semester"></td>
+            </tr>
+            <tr>
+                <td><label>Academic Year :</label></td>
+                <td><input type="text" name="academic_year" placeholder="enter the academic year"></td>
+            </tr>
+            <tr>
+                <td>Subject code</td>
+                <td>
+                    <select name="subject_code">
+                        <option value="">Select Subject Code</option>
+                        <option value="CS19P06">CS19P06</option>
+                        <option value="CS19P05">CS19P05</option>
+                        <option value="CS19P03">CS19P03</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Subject name</td>
+                <td>
+                    <select name="subject_name">
+                        <option value="">Select Subject Name</option>
+                        <option value="internet programming">internet programming</option>
+                        <option value="computer networks">computer networks</option>
+                        <option value="theory of computation">theory of computation</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Credit :</label></td>
+                <td><input type="text" name="credit"></td>
+            </tr>
+            <tr>
+                <td><label>Core/elective</label></td>
+                <td>
+                    <select name="core_elective">
+                        <option value="">Select Core/Elective</option>
+                        <option value="Core">Core</option>
+                        <option value="elective">elective</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="file">Upload Documents:</label></td>
+                <td><input type="file" name="file"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"><input type="reset" value="Cancel"></td>
+            </tr>
+        </table>
+    </form>
+</center>
+
+<script src="script.js"></script>
+
+</body>
+</html>
